@@ -1,0 +1,38 @@
+Duplicate a line
+  Cmd-Shft-D
+
+Indent a line Left of Right
+  Cmd-] or Cmd-[
+
+Move an entire line up or down
+  Cmd-Ctrl-Up or Cmd-Ctrl-Down
+
+Move cursor to the end of the line 
+  Cmd-ArrowLeft or Cmd-ArrowRight
+
+Comment out line (regardless of file type)
+  Cmd-Slash(/)
+
+Ender a new line after current line
+  Cmd-Enter
+
+Enter a new line before current line
+  Cmd-Shift-Enter
+
+Select text with arrow keys
+  Hold Shift and use arrow keys
+
+Delete entire row where the cursor is 
+  Ctrl-Shft-k
+
+Multiple cursors
+  Hold CMd and click different spots
+
+Save as 
+  Cmd-Shft-S
+
+Search for a file within file structure
+  Cmd-P
+
+Search within the file (find)
+  Cmd-F
