@@ -37,13 +37,13 @@ attr_accessor :contacts, :user_input, :first_name, :last_name
 					@first_name = gets.strip
 					puts 'Last name: '
 					@last_name = gets.strip
-					print 'Phone number (no dashes or spaces): '
+					puts 'Phone number (no dashes or spaces): '
 					@phone_number = gets.strip
 					new_contact(@first_name, @last_name, @phone_number)
 					puts 'All done. Now what would you like to do?'
 					menu_options
 				when '4'
-					print 'First name of person being deleted: '
+					puts 'First name of person being deleted: '
 					@first_name = gets.strip
 					delete_contact(@first_name)
 					puts 'I never liked them either. Now what?'
@@ -64,8 +64,7 @@ attr_accessor :contacts, :user_input, :first_name, :last_name
 
 	# How the hell do you sort a hash alphabetically by key?!
 	def alphabetize_contacts 
-		Hash[@contacts.sort]
-		@contacts.length.times do |item|
+		@contacts.keys.sort.length.times do |item|
 		  puts "#{@contacts.keys[item]} -- #{@contacts[@contacts.keys[item]][0]} -- #{@contacts[@contacts.keys[item]][1]}"
 		end
 	end
